@@ -5,6 +5,7 @@ function Banner() {
     <div className="relative h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[700px]">
       <Image
         src="https://a0.muscache.com/im/pictures/d3f25640-6035-4e50-adaa-cb1f26ee0685.jpg?im_w=1440"
+        alt=""
         layout="fill"
         objectFit="cover"
       />
@@ -14,7 +15,7 @@ function Banner() {
         </p>
         <button
           className="text-purple-500 bg-gray-100 rounded-full px-10 py-4 shadow-neutral-600 shadow-md font-bold my-7 hover:shadow-xl hover:shadow-neutral-500 active:scale-90 transition duration-150">
-          I'm flexible
+          I&apos;m flexible
         </button>
       </div>
     </div>
