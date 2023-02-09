@@ -6,11 +6,11 @@ const progress = new ProgressBar({
   size: 4,
   color: "#FE595E",
   className: "z-50",
-  delay: 80,
+  delay: 100,
 });
 
 Router.events.on("routeChangeStart", progress.start);
-Router.events.on("routeChangeEnd", progress.finish);
+Router.events.on("routeChangeComplete", progress.finish);
 Router.events.on("routeChangeError", progress.finish);
 
 function MyApp({ Component, pageProps }) {

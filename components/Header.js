@@ -70,7 +70,7 @@ function Header({ placeholder }) {
       {/* Center */}
       <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm">
         <input
-          className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400"
+          className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400 truncate"
           type="text"
           placeholder={placeholder || "Where are you going?"}
           value={searchInput}
@@ -81,7 +81,7 @@ function Header({ placeholder }) {
       </div>
       {/* Right */}
       <div className="flex items-center space-x-4 justify-end text-gray-500">
-        <p className="hidden md:inline-flex md:px-1 cursor-pointer">Become a host!</p>
+        <p className="hidden lg:inline cursor-pointer">Become a host!</p>
         <GlobeAltIcon className="h-6" />
 
         <div className="flex items-center space-x-2 border-2 p-2 rounded-full cursor-pointer">

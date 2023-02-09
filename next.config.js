@@ -6,6 +6,7 @@ const nextConfig = {
       "upload.wikimedia.org",
       "links.papareact.com",
       "a0.muscache.com",
+      "jsonkeeper.com"
     ],
   }
 }

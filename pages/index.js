@@ -26,7 +26,7 @@ export default function Home({ exploreData, cardsData }) {
 
           {/* Pull some data from the server - API endpoints */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {exploreData.map(item => (
+            {exploreData?.map(item => (
               <SmallCard
                 key={item.img}
                 img={item.img}
@@ -43,7 +43,7 @@ export default function Home({ exploreData, cardsData }) {
           </h2>
 
           <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
-            {cardsData.map(({ img, title }) => (
+            {cardsData?.map(({ img, title }) => (
               <MediumCard key={img} img={img} title={title} />
             ))}
           </div>
@@ -63,12 +63,12 @@ export default function Home({ exploreData, cardsData }) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch("https://links.papareact.com/pyp").
+  const exploreData = await fetch("https://www.jsonkeeper.com/b/4G1G").
     then(
       (res) => res.json()
     );
 
-  const cardsData = await fetch("https://links.papareact.com/zp1").
+  const cardsData = await fetch("https://www.jsonkeeper.com/b/VHHT").
     then(
       (res) => res.json()
     );

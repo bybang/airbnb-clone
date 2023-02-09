@@ -5,7 +5,7 @@ import React from 'react'
 
 function InfoCard({ img, location, title, description, star, price, total }) {
   return (
-    <div className="flex px-2 py-7 pr-4 marker:border-b cursor-pointer hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t">
+    <div className="flex px-2 py-7 pr-4 border-b cursor-pointer hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t">
       <div className="relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0">
         <Image
           className="rounded-2xl"
@@ -18,7 +18,7 @@ function InfoCard({ img, location, title, description, star, price, total }) {
 
       <div className="flex flex-col flex-grow pl-5">
         <div className="flex justify-between">
-          <p>{location}</p>
+          <p className='text-gray-500'>{location}</p>
           <HeartIcon className="h-7 cursor-pointer" />
         </div>
 
